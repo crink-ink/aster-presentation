@@ -177,8 +177,8 @@
   .detail .copy h2{font-size:clamp(48px,5.5vw,80px)}
   .detail .copy .lede{margin-top:24px}
   .detail .copy ul{margin-top:4vh;list-style:none;border-top:1px solid var(--line)}
-  .detail .copy ul li{display:flex;gap:12px;padding:1.4vh 0;border-bottom:1px solid var(--line);font-size:clamp(13px,1vw,15px);line-height:1.45;color:var(--ink-2);align-items:flex-start}
-  .detail .copy ul li::before{content:"—";color:var(--primary);font-weight:500;flex-shrink:0;min-width:18px}
+  .detail .copy ul li{position:relative;padding:1.4vh 0 1.4vh 30px;border-bottom:1px solid var(--line);font-size:clamp(13px,1vw,15px);line-height:1.45;color:var(--ink-2)}
+  .detail .copy ul li::before{content:"—";color:var(--primary);font-weight:500;position:absolute;left:0;top:1.4vh}
 
   .webinar-card{
     width:min(420px,32vw);background:#fff;border-radius:20px;overflow:hidden;
@@ -225,8 +225,8 @@
   .show .copy h2{font-size:clamp(44px,5vw,72px)}
   .show .copy .lede{margin-top:20px}
   .show .copy ul{margin-top:3vh;list-style:none;border-top:1px solid var(--line)}
-  .show .copy ul li{display:flex;gap:10px;padding:1.2vh 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--ink-2);align-items:flex-start}
-  .show .copy ul li::before{content:"—";color:var(--primary);font-weight:500;flex-shrink:0;min-width:18px}
+  .show .copy ul li{position:relative;padding:1.2vh 0 1.2vh 28px;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--ink-2)}
+  .show .copy ul li::before{content:"—";color:var(--primary);font-weight:500;position:absolute;left:0;top:1.2vh}
 
   /* phone-mock generic */
   .phone-mock{
@@ -397,8 +397,8 @@
   .dash-wrap .copy h2{font-size:clamp(40px,4.5vw,64px)}
   .dash-wrap .copy .lede{margin-top:18px}
   .dash-wrap .copy ul{margin-top:3vh;list-style:none;border-top:1px solid var(--line)}
-  .dash-wrap .copy ul li{display:flex;gap:10px;padding:1.2vh 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--ink-2);align-items:flex-start}
-  .dash-wrap .copy ul li::before{content:"—";color:var(--primary);font-weight:500;flex-shrink:0;min-width:18px}
+  .dash-wrap .copy ul li{position:relative;padding:1.2vh 0 1.2vh 28px;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5;color:var(--ink-2)}
+  .dash-wrap .copy ul li::before{content:"—";color:var(--primary);font-weight:500;position:absolute;left:0;top:1.2vh}
 
   .dash{background:#0F0F18;border-radius:14px;overflow:hidden;box-shadow:0 40px 80px -20px rgba(10,10,18,.4);border:1px solid rgba(255,255,255,.04)}
   .dash-bar{background:#16161F;padding:10px 14px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(255,255,255,.04)}
@@ -648,7 +648,7 @@
       <div class="middle">
         <div>
           <div class="eyebrow anim" style="color:#A78BFA">A product by Crink</div>
-          <h1 class="anim d1" style="margin-top:36px">Aster Crink<br/><em>Wellbeing Collab.</em></h1>
+          <h1 class="anim d1" style="margin-top:36px">Aster <span style="color:#A78BFA;font-style:italic;font-weight:300">×</span> Crink<br/><em>Wellbeing Collab.</em></h1>
           <p class="lede anim d2">A webinar + four weeks of guided practice, private community, and measurable outcomes.</p>
         </div>
         <div class="ornament anim-fade">
@@ -877,7 +877,7 @@
         <div class="copy">
           <div class="step anim">Step i</div>
           <h2 class="title anim d1">It begins<br/>with one<br/><em>webinar.</em></h2>
-          <p class="lede anim d2" style="margin-top:24px">Crink and Aster's GEMS team work together to pick a focused topic and schedule a live session — announced by Aster, promoted across the Aster app, with registrations handled in-app.</p>
+          <p class="lede anim d2" style="margin-top:24px">Crink, Aster, and GEMS work together to pick a focused topic and schedule a live session — announced by Aster, promoted across the Aster app, with registrations handled in the app dashboard.</p>
           <ul class="anim d3">
             <li>No third app to download — Crink lives natively inside the Aster app</li>
             <li>In-app registration, reminders, and waitlist handled by Crink</li>
