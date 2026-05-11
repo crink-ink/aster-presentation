@@ -132,7 +132,7 @@
   .phones-3 .p3{transform:translateX(160px) rotate(7deg);z-index:2}
 
   /* ============================ SLIDE 4: ELEMENTS ============================ */
-  .elements-row{display:grid;grid-template-columns:repeat(4,1fr);gap:4vw;margin-top:auto;border-top:1px solid var(--line);padding-top:4vh}
+  .elements-row{display:grid;grid-template-columns:repeat(3,1fr);gap:3vw 4vw;margin-top:auto;border-top:1px solid var(--line);padding-top:3.5vh}
   .el{display:flex;flex-direction:column;gap:14px}
   .el .num{font-family:var(--serif);font-style:italic;font-size:clamp(20px,1.7vw,26px);color:var(--primary);font-weight:400}
   .el .ico{width:48px;height:48px;display:flex;align-items:center;justify-content:center;color:var(--ink);margin-bottom:8px}
@@ -167,7 +167,7 @@
   .flow-cell h4{font-family:var(--serif);font-weight:400;font-size:clamp(18px,1.7vw,24px);line-height:1.05;color:var(--ink);letter-spacing:-.3px}
   .flow-cell p{font-size:clamp(11px,.85vw,13px);line-height:1.5;color:var(--muted)}
 
-  .flow-caption{margin-top:4vh;display:grid;grid-template-columns:repeat(3,1fr);gap:4vw}
+  .flow-caption{margin-top:4vh;display:grid;grid-template-columns:repeat(2,1fr);gap:4vw;max-width:70%}
   .flow-caption .c h5{font-family:var(--serif);font-style:italic;font-size:clamp(16px,1.5vw,22px);color:var(--ink);margin-bottom:6px;font-weight:400}
   .flow-caption .c p{font-size:clamp(11px,.9vw,13px);color:var(--muted);line-height:1.5}
 
@@ -548,20 +548,20 @@
   .host-studio .timeline .when{color:rgba(255,255,255,.4);font-family:var(--serif);font-style:italic;font-size:12px}
 
   /* ============================ STEP 2 · AUTO-ENROLL ARTIFACT ============================ */
-  .enroll-stack{position:relative;width:min(520px,40vw);aspect-ratio:1;margin:auto;display:flex;align-items:center;justify-content:center}
-  .enroll-notif{position:absolute;top:6%;left:50%;transform:translateX(-50%) rotate(-2deg);width:88%;background:rgba(255,255,255,.85);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.6);border-radius:18px;padding:14px 16px;box-shadow:0 30px 60px -10px rgba(10,10,18,.25);display:flex;align-items:flex-start;gap:12px;z-index:5}
-  .enroll-notif .ico{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#5B4BDB,#8B5CF6);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:18px;flex-shrink:0}
+  .enroll-stack{position:relative;width:min(320px,26vw);margin:auto;display:block}
+  .enroll-notif{position:absolute;top:5%;left:5%;right:5%;background:rgba(245,245,247,.82);backdrop-filter:blur(24px) saturate(1.4);-webkit-backdrop-filter:blur(24px) saturate(1.4);border:.5px solid rgba(255,255,255,.5);border-radius:14px;padding:10px 12px;box-shadow:0 6px 16px rgba(0,0,0,.18),0 1px 2px rgba(0,0,0,.1);display:flex;align-items:flex-start;gap:10px;z-index:20}
+  .enroll-notif .ico{width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,#5B4BDB,#8B5CF6);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:14px;flex-shrink:0}
   .enroll-notif .body{flex:1;min-width:0}
-  .enroll-notif .top{display:flex;justify-content:space-between;align-items:baseline;font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
-  .enroll-notif .top .tm{font-family:var(--serif);font-style:italic;letter-spacing:0;text-transform:none;font-size:11px;color:var(--ink-2)}
-  .enroll-notif .ttl{font-size:13px;font-weight:600;color:var(--ink);margin-top:4px;letter-spacing:-.2px}
-  .enroll-notif .dsc{font-size:12px;color:var(--ink-2);margin-top:2px;line-height:1.4}
+  .enroll-notif .top{display:flex;justify-content:space-between;align-items:baseline;font-size:9px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .enroll-notif .top .tm{font-family:var(--sans);font-style:normal;letter-spacing:.04em;text-transform:lowercase;font-size:9px;color:var(--muted);font-weight:500}
+  .enroll-notif .ttl{font-size:11.5px;font-weight:600;color:var(--ink);margin-top:3px;letter-spacing:-.1px;line-height:1.2}
+  .enroll-notif .dsc{font-size:11px;color:var(--ink-2);margin-top:2px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
   .welcome-phone{
-    width:min(300px,24vw);aspect-ratio:300/620;background:#0A0A12;border-radius:42px;padding:12px;
-    box-shadow:0 50px 100px -20px rgba(10,10,18,.4);position:relative;margin-top:22%;
+    width:100%;aspect-ratio:300/620;background:#0A0A12;border-radius:42px;padding:12px;
+    box-shadow:0 50px 100px -20px rgba(10,10,18,.4);position:relative;margin-top:0;
   }
-  .welcome-phone::before{content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);width:30%;height:4.5%;background:#0A0A12;border-radius:16px;z-index:10}
+  .welcome-phone::before{content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);width:30%;height:4.5%;background:#0A0A12;border-radius:16px;z-index:30}
   .welcome-screen{width:100%;height:100%;border-radius:32px;background:linear-gradient(180deg,#5B4BDB 0%,#7C3AED 50%,#0A0A12 100%);overflow:hidden;display:flex;flex-direction:column;position:relative;color:#fff}
   .welcome-screen .stat-bar{height:46px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 28px 8px;font-size:13px;font-weight:600;color:#fff}
   .welcome-screen .ring{margin:28px auto 0;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:42px;backdrop-filter:blur(20px)}
@@ -627,6 +627,7 @@
   .slide.active .anim.d3{animation-delay:.28s}
   .slide.active .anim.d4{animation-delay:.38s}
   .slide.active .anim.d5{animation-delay:.48s}
+  .slide.active .anim.d6{animation-delay:.58s}
   @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
   .slide.active .anim-fade{animation:fade 1s ease both}
   @keyframes fade{from{opacity:0}to{opacity:1}}
@@ -646,9 +647,9 @@
       </div>
       <div class="middle">
         <div>
-          <div class="eyebrow anim" style="color:#A78BFA">A product concept by Crink</div>
-          <h1 class="anim d1" style="margin-top:36px">Group<br/><em>Sessions.</em></h1>
-          <p class="lede anim d2">Turning a single live webinar into four weeks of guided practice, private community, and measurable outcomes — inside the Crink app.</p>
+          <div class="eyebrow anim" style="color:#A78BFA">A product by Crink</div>
+          <h1 class="anim d1" style="margin-top:36px">Aster Crink<br/><em>Wellbeing Collab.</em></h1>
+          <p class="lede anim d2">A webinar + four weeks of guided practice, private community, and measurable outcomes.</p>
         </div>
         <div class="ornament anim-fade">
           <svg viewBox="0 0 320 320">
@@ -677,7 +678,7 @@
       <div class="agenda">
         <div class="left">
           <div class="eyebrow anim">Today's walk-through</div>
-          <h2 class="title anim d1" style="margin-top:24px">What we'll<br/>show you<br/><em>today.</em></h2>
+          <h2 class="title anim d1" style="margin-top:24px">What's<br/><em>ahead.</em></h2>
         </div>
         <div class="right">
           <div class="list">
@@ -686,7 +687,7 @@
             <div class="row anim d2"><div class="n">iii</div><div class="t">Introducing webinar-led Paths</div><div class="p">03</div></div>
             <div class="row anim d3"><div class="n">iv</div><div class="t">The six-step flow, end to end</div><div class="p">04</div></div>
             <div class="row anim d3"><div class="n">v</div><div class="t">A real example — the Procrastination Path</div><div class="p">05</div></div>
-            <div class="row anim d4"><div class="n">vi</div><div class="t">Cri, the AI therapist — personalized for everyone</div><div class="p">06</div></div>
+            <div class="row anim d4"><div class="n">vi</div><div class="t">Cri, the AI coach — personalized for everyone</div><div class="p">06</div></div>
             <div class="row anim d4"><div class="n">vii</div><div class="t">Community, dashboard & why this works</div><div class="p">07</div></div>
           </div>
         </div>
@@ -704,8 +705,8 @@
         <div class="copy">
           <div class="eyebrow anim">Crink, today</div>
           <h2 class="title anim d1" style="font-size:clamp(48px,5.5vw,80px)">Guided journeys,<br/><em>not just</em><br/>content.</h2>
-          <p class="lede anim d2">Crink is an AI-native wellbeing platform built around <strong>Paths</strong> — curated, multi-step programs that move users from where they are to where they want to be. At the heart of every Path is <em>Cri</em>, our AI therapist — <strong>personalized to each user, supervised by clinicians.</strong></p>
-          <div class="signature anim d3">A new kind of group care, designed for clinicians like Aster</div>
+          <p class="lede anim d2">Crink is an AI-native wellbeing platform built around <strong>Paths</strong> — curated, multi-step programs that move users from where they are to where they want to be. At the heart of every Path is <em>Cri</em>, our AI coach — <strong>personalized to each user, supervised by clinicians.</strong></p>
+          <div class="signature anim d3">Rethinking group care with Aster</div>
         </div>
         <div class="phones-3 anim-fade">
           <img src="images/2.png" class="p1"/>
@@ -722,8 +723,8 @@
     <div class="chrome"><div class="brand"><span class="mark">Crink</span><span class="x">×</span><span class="for">Aster</span></div><div class="section">— The Path —</div><div class="pageno">04 / 20</div></div>
     <div class="container">
       <div class="eyebrow anim">Anatomy of a Path</div>
-      <h2 class="title anim d1" style="margin-top:18px;font-size:clamp(44px,5.5vw,76px);max-width:22em">Every Path is built from <em>four</em> kinds of elements.</h2>
-      <p class="lede anim d2" style="margin-top:18px;max-width:50em">A blend of reflection, conversation, and learning — mixed together so progress feels alive, not academic. At the center, <strong style="color:var(--ink)">Cri, our AI therapist</strong>, personalizes everything to the individual.</p>
+      <h2 class="title anim d1" style="margin-top:18px;font-size:clamp(44px,5.5vw,76px);max-width:22em">Every Path is built from <em>six</em> kinds of elements.</h2>
+      <p class="lede anim d2" style="margin-top:18px;max-width:50em">A blend of reflection, conversation, and learning — mixed together so progress feels alive, not academic. At the center, <strong style="color:var(--ink)">Cri, our AI coach</strong>, personalizes everything to the individual.</p>
 
       <div class="elements-row">
         <div class="el anim d1">
@@ -736,19 +737,31 @@
           <div class="num">ii.</div>
           <div class="ico" style="color:var(--primary)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
           <h4>Chat with <em style="font-style:italic;color:var(--primary)">Cri</em></h4>
-          <p>Our AI therapist — clinically guided, judgment-free, and <strong style="color:var(--ink)">personalized to every user</strong>. Cri remembers, adapts, and walks alongside.</p>
+          <p>Our AI coach — clinically guided, judgment-free, and <strong style="color:var(--ink)">personalized to every user</strong>. Cri remembers, adapts, and walks alongside.</p>
         </div>
         <div class="el anim d3">
           <div class="num">iii.</div>
           <div class="ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-          <h4>Articles</h4>
+          <h4>Mini reads</h4>
           <p>Short, evidence-based reads — written by clinicians, in the voice of a friend.</p>
         </div>
         <div class="el anim d4">
           <div class="num">iv.</div>
+          <div class="ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/><circle cx="12" cy="12" r="0.5" fill="currentColor"/></svg></div>
+          <h4>Action steps</h4>
+          <p>Small commitments to practice in real life — completed between sessions to turn insight into habit.</p>
+        </div>
+        <div class="el anim d5">
+          <div class="num">v.</div>
+          <div class="ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M7 9h6M7 13h4"/><path d="M7 3h14a2 2 0 0 1 2 2v14"/></svg></div>
+          <h4>Flashcards</h4>
+          <p>Bite-sized reminders — concept, prompt, takeaway. Easy to revisit, easy to save.</p>
+        </div>
+        <div class="el anim d6">
+          <div class="num">vi.</div>
           <div class="ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
-          <h4>Flashcards & Video</h4>
-          <p>Bite-sized lessons and reminders — concept, demonstration, takeaway, takeaway saved.</p>
+          <h4>Video</h4>
+          <p>Short clinician-led demonstrations — see the practice before you try it yourself.</p>
         </div>
       </div>
     </div>
@@ -764,7 +777,7 @@
         <div>
           <div class="eyebrow anim">The opportunity</div>
           <h2 class="title anim d1" style="margin-top:18px;font-size:clamp(54px,7vw,108px)">Webinars get<br/>attention.<br/><em>Paths</em> get<br/>outcomes.</h2>
-          <p class="lede anim d2" style="margin-top:28px">Today's webinars work hard for an hour, then disappear. What if the cohort that gathered for that hour kept going for four weeks?</p>
+          <p class="lede anim d2" style="margin-top:28px">Today's webinars work hard for an hour, then disappear. What if an <strong style="color:var(--ink)">AI coach</strong> kept that cohort going for four weeks — personalizing practice, community and progress for every attendee?</p>
         </div>
         <div class="stats">
           <div class="stat anim d1">
@@ -773,11 +786,11 @@
           </div>
           <div class="stat anim d2">
             <div class="big"><em>4</em><sup>weeks</sup></div>
-            <div class="desc"><strong>A Group Session</strong>of structured practice, peer support, expert moderation and tracked progress — triggered by one webinar.</div>
+            <div class="desc"><strong>A Group Session</strong>of <em>AI-personalized</em> practice, peer support, expert moderation and tracked progress — triggered by one webinar.</div>
           </div>
           <div class="stat anim d3">
             <div class="big">3<sup>×</sup></div>
-            <div class="desc"><strong>Higher completion</strong>in cohort-based learning vs. self-serve content. Community is the multiplier.</div>
+            <div class="desc"><strong>Higher completion</strong>when an <em>AI coach</em> personalizes the journey, vs. one-size-fits-all webinars. AI is the multiplier.</div>
           </div>
         </div>
       </div>
@@ -791,7 +804,7 @@
     <div class="container">
       <div class="intro">
         <div class="eyebrow anim">The idea</div>
-        <h1 class="anim d1">Every paid webinar<br/>unlocks an <em>exclusive</em><br/>Path — only for those<br/>who showed up.</h1>
+        <h1 class="anim d1">From one webinar,<br/>an <em>exclusive</em> Path<br/>unfolds.</h1>
         <p class="sub anim d2">The webinar becomes the kickoff. The Path becomes the practice. The community becomes the support.</p>
       </div>
     </div>
@@ -815,7 +828,7 @@
           <div class="n">i.</div>
           <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
           <h4>Host the Webinar</h4>
-          <p>Topic announced, tickets sold, attendees registered through Crink.</p>
+          <p>Webinar topic announced by Aster — attendees invited to register through Crink.</p>
         </div>
         <div class="flow-cell anim d1">
           <div class="n">ii.</div>
@@ -838,20 +851,19 @@
         <div class="flow-cell anim d3">
           <div class="n">v.</div>
           <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <h4>Organizer Oversees</h4>
+          <h4>Aster Oversees</h4>
           <p>Live dashboard tracks completion, engagement, drop-off — intervene early.</p>
         </div>
         <div class="flow-cell anim d3">
           <div class="n">vi.</div>
           <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
-          <h4>Graduation</h4>
+          <h4>Transformation</h4>
           <p>Outcomes measured, certificates issued, next Path recommended.</p>
         </div>
       </div>
 
       <div class="flow-caption anim d4">
         <div class="c"><h5>For the attendee</h5><p>Inspiration that doesn't fade — four weeks of guided practice with peer support.</p></div>
-        <div class="c"><h5>For the host</h5><p>A way to keep delivering value (and revenue) long after the webinar ends.</p></div>
         <div class="c"><h5>For Aster</h5><p>A scalable, measurable group-care channel — beyond 1:1, beyond static content.</p></div>
       </div>
     </div>
@@ -866,12 +878,12 @@
         <div class="copy">
           <div class="step anim">Step i</div>
           <h2 class="title anim d1">It begins<br/>with one<br/><em>webinar.</em></h2>
-          <p class="lede anim d2" style="margin-top:24px">A clinician on Aster's team picks a focused topic and schedules a paid live session — promoted across the Crink app, branded for Aster, with tickets sold in-app.</p>
+          <p class="lede anim d2" style="margin-top:24px">A clinician on Aster's team picks a focused topic and schedules a live session — announced by Aster, promoted across the Crink app, branded for Aster, with registrations handled in-app.</p>
           <ul class="anim d3">
             <li>Branded, co-marketed landing page — published in minutes</li>
-            <li>In-app ticketing, reminders, and waitlist handled by Crink</li>
+            <li>In-app registration, reminders, and waitlist handled by Crink</li>
             <li>One configuration powers webinar <em>and</em> the Path that follows</li>
-            <li><strong style="color:var(--ink)">AI-assisted topic & curriculum suggestions</strong> from Crink's library</li>
+            <li>Topic & curriculum prepared with the AI coach, drawn from Crink's library</li>
           </ul>
         </div>
         <div class="anim-fade" style="display:flex;align-items:center;justify-content:center">
@@ -894,15 +906,15 @@
               </div>
               <div class="kpi-grid">
                 <div><div class="l">Registered</div><div class="v">217</div></div>
-                <div><div class="l">Revenue</div><div class="v">32<sup>K AED</sup></div></div>
+                <div><div class="l">Capacity</div><div class="v">250</div></div>
                 <div><div class="l">Waitlist</div><div class="v">48</div></div>
-                <div><div class="l">Price</div><div class="v">149<sup>AED</sup></div></div>
+                <div><div class="l">Reminders</div><div class="v">3<sup>sent</sup></div></div>
               </div>
               <div class="timeline">
                 <div class="h">Setup checklist</div>
-                <div class="row"><div class="dot done"></div><div class="nm">Topic & curriculum auto-drafted by Crink AI</div><div class="when">— done</div></div>
+                <div class="row"><div class="dot done"></div><div class="nm">Topic & curriculum prepared with the AI coach</div><div class="when">— done</div></div>
                 <div class="row"><div class="dot done"></div><div class="nm">Landing page co-branded with Aster</div><div class="when">— done</div></div>
-                <div class="row"><div class="dot done"></div><div class="nm">4-week Path linked to webinar ticket</div><div class="when">— done</div></div>
+                <div class="row"><div class="dot done"></div><div class="nm">4-week Path linked to webinar registration</div><div class="when">— done</div></div>
                 <div class="row"><div class="dot"></div><div class="nm">Tech rehearsal with Dr. Reema</div><div class="when">May 22</div></div>
               </div>
             </div>
@@ -920,13 +932,13 @@
       <div class="detail">
         <div class="copy">
           <div class="step anim">Step ii</div>
-          <h2 class="title anim d1">The ticket<br/>becomes a<br/><em>doorway.</em></h2>
+          <h2 class="title anim d1">The registration<br/>becomes a<br/><em>doorway.</em></h2>
           <p class="lede anim d2" style="margin-top:24px">The moment someone registers, an exclusive Path quietly drops into their Crink app — locked, but waiting. After the webinar ends, it unlocks automatically.</p>
           <ul class="anim d3">
-            <li>Push notification + in-app welcome the instant a ticket is bought</li>
+            <li>Push notification + in-app welcome the instant someone registers</li>
             <li>Path is gated to attendees — scarcity drives attendance and completion</li>
             <li>Co-branded with Aster on every screen the attendee sees</li>
-            <li><strong style="color:var(--ink)">Cri begins personalizing</strong> from the first registration question</li>
+            <li>Cri begins personalizing from the first registration question</li>
           </ul>
         </div>
         <div class="anim-fade" style="display:flex;align-items:center;justify-content:center;position:relative">
@@ -1517,7 +1529,7 @@
               <div class="item"><span class="d"></span> Drop-off</div>
               <div class="sec">Webinar</div>
               <div class="item"><span class="d"></span> Recording</div>
-              <div class="item"><span class="d"></span> Revenue</div>
+              <div class="item"><span class="d"></span> Attendance</div>
             </div>
 
             <div class="dash-main">
@@ -1645,8 +1657,8 @@
         </div>
         <div class="wrow anim d3">
           <div class="n">iii.</div>
-          <div class="ttl">Predictable<br/>revenue.</div>
-          <div class="dsc">A repeatable, premium product line for Aster: monthly webinars with paid follow-on Paths. Hosts run a series; attendees become alumni.</div>
+          <div class="ttl">Lasting<br/>relationships.</div>
+          <div class="dsc">A repeatable, scalable group-care channel for Aster: monthly webinars with follow-on Paths. Hosts run a series; attendees become alumni and a long-term community.</div>
           <div class="met">∞<span>compounding</span></div>
         </div>
       </div>
